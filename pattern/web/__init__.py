@@ -493,7 +493,7 @@ class URL(object):
     # URL.string yields unicode(URL) by joining the different parts,
     # if the URL parts have been modified.
     def _get_string(self):
-        return unicode(self)
+        return unicode(self.__dict__["_string"])
 
     def _set_string(self, v):
         self.__dict__["_string"] = u(v)
