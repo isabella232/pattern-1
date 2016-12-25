@@ -20,7 +20,7 @@ install_requires = ["beautifulsoup4",
                     "docx",
                     "feedparser",
                     "pdfminer" if version_info[0] == 2 else "pdfminer3k",
-                    "simplejson"]
+                    "simplejson", 'pdfminer.six']
 
 setup(
     name="pattern",
