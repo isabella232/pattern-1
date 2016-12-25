@@ -54,7 +54,7 @@ except ImportError:
 try:
     from sgmllib import SGMLParser, SGMLParseError
 except ImportError:
-    from html.parser import HTMLParser as SGMLParser, HTMLParseError as SGMLParseError
+    from html.parser import HTMLParser as SGMLParser
 
 try:
     from http.cookiejar import CookieJar
